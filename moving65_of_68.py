@@ -73,8 +73,8 @@ class MainClass():
                
   # CheckFiles function.     
   def CheckFiles(self):
-      src = self.s.get()
-      dst = self.d.get()
+      src = ###
+      dst = ###
       print(src)
       print(dst)
       for fname in os.listdir(src):
@@ -88,8 +88,8 @@ class MainClass():
              if timeDiff < last24hrs: #Seconds that have passed since file creation or modification from last 24 hrs
                 shutil.move(src_fname,dst)
                 print("( {} ) moved to: {}".format(fname, dst))
-                print("\nProcess completed.\nThere are no more qualifying files."
-                       "\nPlease check back at a later time.\nGoodbye!")
+              # print("\nProcess completed.\nThere are no more qualifying files."
+                     # "\nPlease check back at a later time.\nGoodbye!")
                          
                             
 if __name__ == '__main__':
